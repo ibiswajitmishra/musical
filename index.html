@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Musical - Where Music finds you | Home </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/index.js">
+     function active(){
+      var searchbar= document.getElementById('searchbar');
+      if(searchbar.value== 'Search...'){
+        searchbar.value='';
+        searchbar.placeholder= 'Search...';
+      }
+    }
+    function inactive(){
+     var searchbar= document.getElementById('searchbar');
+     if(searchbar.value== ''){
+       searchbar.value='Search...';
+       searchbar.placeholder= '';
+     }
+   }
+
+    </script>
+</head>
+
+<body style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xThVo6ZF8adQQG4KVSo11X0d53hRd6zBm1zLzpwHbOPYeTY7'); background-repeat:no-repeat;">
+
+
+
+  <nav  class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+    <div class="container-fluid">
+<a style="color: #3a70ad; " class="navbar-brand" href="https://ambujraj.github.io/musical/"><h2>Musical</h2></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Browse</a>
+    </li>
+
+
+    <li class="nav-item">
+      <a class="nav-link " href="#">Discover</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Radio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">My Music</a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0" action="search.js" method="post">
+    <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Let the music find u!" aria-label="Search" autocomplete="on" maxlength="25" value="" onMouseDown="active();" onBlur="inactive()">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find it!</button></form>
+    <form action="src/Signin.html">
+    <button style="margin-left:40px;" type="submit" class="btn btn-info">SignIn</button></form>
+    <form action="src/SignUp.html">
+    <button style="margin-left:5px;" type="submit" class="btn btn-info">Create Account</button>
+
+
+  </form>
+
+</div>
+</nav>
+</div>
+<div class="footer" style="background-color: #1D1C1C;height:20%;width:100%;">
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

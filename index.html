@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <title>Musical - Where Music finds you | Home </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <script type="text/javascript" src="js/index.js">
+    </script>
+    <script type="text/javascript">
      function active(){
       var searchbar= document.getElementById('searchbar');
       if(searchbar.value== 'Search...'){
@@ -28,9 +30,51 @@
    }
 
     </script>
+    <style>
+    .button1 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+      width: 115px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button1:hover span {
+      padding-right: 25px;
+    }
+
+    .button1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+
 </head>
 
-<body style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xThVo6ZF8adQQG4KVSo11X0d53hRd6zBm1zLzpwHbOPYeTY7'); background-repeat:no-repeat;">
+<body>
 
 
 
@@ -61,12 +105,15 @@
       <a class="nav-link" href="#">My Music</a>
     </li>
   </ul>
-  <form class="form-inline my-2 my-lg-0" action="search.js" method="post">
+  <form class="form-inline" action="checkout.html">
+    <button class="button1 btn" type="submit" style="vertical-align:middle"><span>Get Pro</span></button>
+  </form>
+  <form class="form-inline my-2 my-lg-0" action="js/index.js" method="post">
     <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Let the music find u!" aria-label="Search" autocomplete="on" maxlength="25" value="" onMouseDown="active();" onBlur="inactive()">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find it!</button></form>
     <form action="src/Signin.html">
     <button style="margin-left:40px;" type="submit" class="btn btn-info">SignIn</button></form>
-    <form action="src/SignUp.html">
+    <form action="src/createaccount.html">
     <button style="margin-left:5px;" type="submit" class="btn btn-info">Create Account</button>
 
 

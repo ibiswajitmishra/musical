@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <title>Get Pro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style media="screen">
+      body {
+    background-image: url("data:image/jpeg;base64,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");
+
+    background-repeat: repeat;
+    background-color: #FFFFFF;
+}
+
+    </style>
   </head>
   <body>
     <div class="container-fluid" position="relative">
@@ -17,7 +26,7 @@
     <div class="card-body">
       <h5 class="card-title">1 month @<span style="color: orange;">₹99</span></h5>
       <p class="card-text"> Enjoy Ad-free HD music for 1 months.</p>
-      <a href="src/checkout-one.html" class="btn btn-primary">CheckOut now</a>
+      <a href="checkout-one.html" class="btn btn-primary">CheckOut now</a>
     </div>
   </div>
 </div>
@@ -26,7 +35,7 @@
     <div class="card-body">
       <h5 class="card-title">3 months @<span style="color: orange;">₹299</span></h5>
       <p class="card-text"> Enjoy Ad-free HD music for 3 months.</p>
-      <a href="src/checkout-three.html" class="btn btn-primary">CheckOut now</a>
+      <a href="checkout-three.html" class="btn btn-primary">CheckOut now</a>
     </div>
   </div>
 </div>
@@ -34,9 +43,9 @@
   <div style="background-color:#343A40;color:white;" class="card">
     <div class="card-body">
       <h5 class="card-title" style="border-left:3px yellow solid;padding-left:2px;color:grey;"> Popular</h5>
-      <h5 class="card-title">6 months @<span style="color: orange;">₹499</span> </h5>
+      <h5 class="card-title">6 months @<span style="color: orange;">₹499</span></h5>
       <p class="card-text">Listen Offline, HD Music, Go Ad-Free, Connect upto 5 Devices, and much more.</p>
-      <a href="src/checkout-six.html" class="btn btn-primary">CheckOut now</a>
+      <a href="checkout-six.html" class="btn btn-primary">CheckOut now</a>
     </div>
   </div>
 </div>

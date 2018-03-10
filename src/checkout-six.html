@@ -7,7 +7,7 @@
 <link rel="icon" href="../icon/favicon.ico">
 <style>
 body {
-  background-color: #b8c4d1;
+  background-color: #ffffff;
   font-family: 'Quicksand', sans-serif;
   font-size: 17px;
   padding: 8px;
@@ -93,7 +93,11 @@ a {
 }
 
 hr {
-  border: 1px solid lightgrey;
+
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
 }
 
 span.price {
@@ -121,9 +125,18 @@ h2{
 <h2>Checkout here</h2>
 <div class="row">
   <div class="col-75">
-    <div class="container">
+
       <form action="comingsoon.html">
 
+        <div class="row">
+          <div class="col-25">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+            <p>Pro account <span class="price">₹499</span></p>
+            <p>Tax <span class="price">₹30</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>₹529</b></span></p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
@@ -150,13 +163,6 @@ h2{
 
           <div class="col-50">
             <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-
-            </div>
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="Balwant Ram">
             <label for="ccnum">Credit card number</label>
@@ -179,17 +185,9 @@ h2{
 
         <input style="background-color:#343a40;" type="submit" value="Continue to checkout" class="btn">
       </form>
-    </div>
+
   </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
-      <p>Pro account <span class="price">₹499</span></p>
-      <p>Tax <span class="price">₹30</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>₹529</b></span></p>
-    </div>
-  </div>
+
 </div>
 
 </body>

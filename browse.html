@@ -9,77 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css.bfont.css">
+    <link rel="stylesheet" href="css/bfont.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Musical - Where Music finds you | Home </title>
     <script type="text/javascript" src="js/index.js">
     </script>
 
-    <script type="text/javascript">
-     function active(){
-      var searchbar= document.getElementById('searchbar');
-      if(searchbar.value== 'Searchimages/aslongas.jpg'){
-        searchbar.value='';
-        searchbar.placeholder= 'Searchimages/aslongas.jpg';
-      }
-    }
-    function inactive(){
-     var searchbar= document.getElementById('searchbar');
-     if(searchbar.value== ''){
-       searchbar.value='Searchimages/aslongas.jpg';
-       searchbar.placeholder= '';
-     }
-   }
 
-    </script>
-    <style>
-    .button1 {
-      display: inline-block;
-      border-radius: 4px;
-      background-color: #f4511e;
-      border: none;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 18px;
-      padding: 10px;
-      width: 115px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-
-    .button1 span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .button1 span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .button1:hover span {
-      padding-right: 25px;
-    }
-
-    .button1:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-    body {
-  background-color: #111111;
-   }
-   hr{
-    background-color: grey;
-}
-
-
-    </style>
 
 </head>
 
@@ -116,7 +53,7 @@
   </form>
   <form class="form-inline my-2 my-lg-0" action="js/index.js" method="post">
     <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Let the music find u!" aria-label="Search" autocomplete="on" maxlength="25" value="" onMouseDown="active();" onBlur="inactive()">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find it!</button></form>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="find" style="border: 1px solid #3a70ad;color: #3a70ad;" type="submit">Find it!</button></form>
     <form action="src/Signin.html">
     <button style="margin-left:40px;" type="submit" class="btn btn-info">SignIn</button></form>
     <form action="src/createAccount.html">

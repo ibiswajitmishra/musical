@@ -43,3 +43,6 @@ background-color: #111111;
 hr{
 background-color: grey;
 }
+#find:hover{
+  background-color: #363B42;
+}

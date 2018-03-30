@@ -13,7 +13,16 @@
     <title>Musical - Where Music finds you | Home </title>
     <script type="text/javascript" src="js/index.js">
     </script>
-
+    <script type="text/javascript>
+    document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
 </head>
 
 <body>

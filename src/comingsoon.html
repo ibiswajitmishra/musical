@@ -9,7 +9,12 @@
     <title>Coming Soon</title>
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <script type=text/javascript>
+      function click(){
+      alert("You are now Subscribed!");
+        document.getElementById("email").value="";
+      }
+    </script>
 
     <link href="../css/comingsoon.css" rel="stylesheet">
   </head>
@@ -21,9 +26,9 @@
            <p class="mb-5" ><h5><b>We're working hard to finish the development of this site. Our target launch date is
              <strong>January 2019</strong>! Sign up for updates using the form below!</b></h5></p>
              <div class="input-group input-group-newsletter">
-               <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
+               <input type="email" class="form-control" id="email" placeholder="Enter email...">
                <div class="input-group-append">
-                 <button style="background-color: #CD9557;" class="btn btn-secondary" type="button">Notify Me!</button>
+                 <input style="background-color: #CD9557;" class="btn btn-secondary" type="button" onclick="click();">Notify Me!</button>
                </div>
              </div>
          </div>

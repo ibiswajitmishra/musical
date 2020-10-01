@@ -44,5 +44,5 @@ hr{
 background-color: grey;
 }
 #find:hover{
-  background-color: #363B42;
+  background-color: #363B42 !important;
 }
